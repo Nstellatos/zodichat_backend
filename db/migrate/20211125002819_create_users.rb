@@ -4,8 +4,8 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :username
       t.string :password_digest
       t.string :sun_sign 
-      t.string :moon_sign 
-      t.string :rising_sign 
+      t.string :image_url
+
       t.text :bio 
 
 
