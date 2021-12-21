@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
         if user && user.authenticate(params[:password])
             render json: user
         else
-            render json: "INVALID USERNAME OR PASSWORD", status :forbidden
+            render json: {errors: "INVALID USERNAME OR PASSWORD"}, status :forbidden
         end
     end
 
