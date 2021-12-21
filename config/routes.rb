@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :signs 
+  resources :signs do
   resources :posts
+  end
   
   
 
