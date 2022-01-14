@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :signs do
-  resources :posts
-
+  resources :signs, shallow: true do
+    resources :posts
   end
   
+
   
 
   resources :users
